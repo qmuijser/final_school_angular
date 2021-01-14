@@ -1,1 +1,24 @@
-<p>productsview works!</p>
+
+  <div class="row">
+
+	<div *ngFor="let product of products" class="col-lg-6 border border-dark rounded">
+		<div class="row border border-dark">
+			<p>{{product.name}}</p>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<a href="">
+					<img src="assets/empty-profile.webp" class="product_image">
+				</a>
+			</div>
+			<div class="col-4">
+				<p>{{product.description}}</p>
+			</div>
+			<div class="col-4">
+				<p>5 left</p>
+				<!-- should check if in cart already -->
+				<button>Add to cart</button>
+			</div>
+		</div>
+	</div>
+  </div>
