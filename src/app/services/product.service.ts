@@ -18,8 +18,8 @@ export class ProductService {
     return this.http.get<Product[]>(`${this.ApiUrl}`) 
   }
 
-  getAllProductsWithName(): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.ApiUrl}`) 
+  getAllProductsWithName(name : Text): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.ApiUrl}` + "/byname/"+name) 
   }
 
   getAllProductsWithDescription(): Observable<Product[]> {
