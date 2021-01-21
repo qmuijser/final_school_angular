@@ -13,9 +13,9 @@ export class SearchbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  Search() {
-    this.router.navigateByUrl('search/'+event.target.value);
-    console.log(event.target.value);
+  Search(event) {
+    location.href = "search/"+event.target['value'];
+    console.log(event.target['value']);
   }
 
 }
