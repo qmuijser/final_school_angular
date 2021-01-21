@@ -1,6 +1,5 @@
 .container {
     padding-top: 10%;
-    border: solid black 1px;
     max-width: 80%;
     overflow:auto;
 }

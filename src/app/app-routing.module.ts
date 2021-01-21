@@ -8,7 +8,7 @@ import { CartviewComponent } from './modules/user/shoppingcart/components/cartvi
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent, },
-  { path: '*', component: HomepageComponent, },
+  { path: '', component: HomepageComponent, },
   { path: 'product/:id', component: ProductViewComponent, },
   { path: 'search/:query', component: ProductsviewComponent, },
   { path: 'cart', component: CartviewComponent, },
