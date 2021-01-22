@@ -8,7 +8,7 @@ import { CartService } from '../../../../../services/cart.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private cart: CartService) { }
+  constructor(public cart: CartService) { }
 
   ngOnInit(): void {
     console.log("new version");
