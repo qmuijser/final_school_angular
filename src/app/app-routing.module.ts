@@ -5,6 +5,8 @@ import { HomepageComponent } from './modules/user/homepage-content/components/ho
 import { ProductViewComponent } from './modules/user/product_view/components/product-view/product-view.component';
 import { ProductsviewComponent } from './modules/user/products_view/components/productsview/productsview.component';
 import { CartviewComponent } from './modules/user/shoppingcart/components/cartview/cartview.component';
+import { CheckoutComponent } from './modules/user/checkout/checkout.component';
+
 
 const routes: Routes = [
   { path: 'home', component: HomepageComponent, },
@@ -12,6 +14,7 @@ const routes: Routes = [
   { path: 'product/:id', component: ProductViewComponent, },
   { path: 'search/:query', component: ProductsviewComponent, },
   { path: 'cart', component: CartviewComponent, },
+  { path: 'checkout', component: CheckoutComponent, },
 ];
 
 @NgModule({

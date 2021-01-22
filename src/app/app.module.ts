@@ -12,6 +12,8 @@ import { HomepageComponent } from './modules/user/homepage-content/components/ho
 import { ProductsviewComponent } from './modules/user/products_view/components/productsview/productsview.component';
 import { ProductViewComponent } from './modules/user/product_view/components/product-view/product-view.component';
 import { CartviewComponent } from './modules/user/shoppingcart/components/cartview/cartview.component';
+import { CheckoutComponent } from './modules/user/checkout/checkout.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,14 @@ import { CartviewComponent } from './modules/user/shoppingcart/components/cartvi
     HomepageComponent,
     ProductsviewComponent,
     ProductViewComponent,
-    CartviewComponent
+    CartviewComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
