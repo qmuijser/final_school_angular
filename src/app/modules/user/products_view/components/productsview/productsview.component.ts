@@ -33,10 +33,9 @@ export class ProductsviewComponent implements OnInit {
     }, 2000);
   }
 
-  // addProduct(index: Number): void {
-  //   console.log(index);
-  //   // this.cart.addProduct(product);
-  // }
+  addProduct(product:Product): void {
+    this.cart.addProduct(product);
+  }
 
   // test() {
   //   console.log("test");

@@ -8,8 +8,21 @@ export class CartService {
 
   public products: Product[] = [];
 
-  removeProduct(product: Product) {
 
+  containsProduct(id: Number) {
+    for (let i = 0; i < this.products.length; i++) {
+      if(this.products[i].productId == id) {
+        return true;
+      }
+    }
+  }
+
+  removeProduct(id: number) {
+     for (let i = 0; i < this.products.length; i++) {
+      if(this.products[i].productId == id) {
+        this.products.splice(i, 1);
+      }
+    }
   }
 
   addProduct(product: Product) {
