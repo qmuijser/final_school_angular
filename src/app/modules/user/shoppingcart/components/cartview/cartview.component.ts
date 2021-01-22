@@ -10,7 +10,7 @@ import { Product } from '../../../../../models/product';
 })
 export class CartviewComponent implements OnInit {
 
-  constructor(private cart: CartService) { }
+  constructor(public cart: CartService) { }
 
   getProducts(): any{
     return this.cart.products;

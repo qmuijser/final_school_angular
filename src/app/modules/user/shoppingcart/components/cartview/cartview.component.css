@@ -1,39 +1,12 @@
-.left {
-  background: grey;  
-}
-
-.right {
-  background: black;  
-}
-
-.main-wrapper {
-  height: 60vh;  
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.order-wrapper {
-	height: 40vh;
-	background-color: gray;
-}
-
-.section {
-  height: 100%;  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.half {
-  background: #f9f9f9;
-  height: 50%;  
+.one, .two {
   width: 100%;
-  margin: 15px 0;
+  height: 72vh;
 }
-
-h4 {
-  color: white;  
+.one {
+  overflow: auto;
+}
+.two {
+  background-color: grey;
+  height: 20vh;
+  top: 40vh;
 }
