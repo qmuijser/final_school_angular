@@ -3,6 +3,7 @@ import { ProductService } from '../../../../../services/product.service'
 import { Product } from 'src/app/models/product';
 import { ProductstockService} from 'src/app/services/productstock.service';
 import { ActivatedRoute } from '@angular/router';
+import { CartService } from '../../../../../services/cart.service';
 
 @Component({
   selector: 'app-productsview',
@@ -11,15 +12,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductsviewComponent implements OnInit {
 
-  products: Product[];
+  public products: Product[];
 
   search: Text;
   private sub: any;
 
-  constructor(private service: ProductService, private productStock: ProductstockService, private route: ActivatedRoute) { }
+  constructor(private service: ProductService, private productStock: ProductstockService, private route: ActivatedRoute,public cart: CartService) { }
 
   ngOnInit(): void {
-
     this.sub = this.route.params.subscribe(params => {
        this.search = params['query']; 
     });
@@ -32,6 +32,16 @@ export class ProductsviewComponent implements OnInit {
       this.productStock.askServer(1);
     }, 2000);
   }
+
+  // addProduct(index: Number): void {
+  //   console.log(index);
+  //   // this.cart.addProduct(product);
+  // }
+
+  // test() {
+  //   console.log("test");
+  // }
+
 
   getProducts() {
     this.service.getAllProductsWithName(this.search).subscribe(

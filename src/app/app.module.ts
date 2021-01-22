@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './modules/user/header/components/header/header.component';
 import { FooterComponent } from './modules/user/footer/components/footer/footer.component';
-import { CartComponent } from './modules/user/shoppingcart/components/cart/cart.component';
 import { SearchbarComponent } from './modules/user/search/components/searchbar/searchbar.component';
 import { UserComponent } from './modules/user/user/components/user/user.component';
 import { HomepageComponent } from './modules/user/homepage-content/components/homepage/homepage.component';
@@ -19,7 +18,6 @@ import { CartviewComponent } from './modules/user/shoppingcart/components/cartvi
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CartComponent,
     SearchbarComponent,
     UserComponent,
     HomepageComponent,

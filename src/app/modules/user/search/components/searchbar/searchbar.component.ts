@@ -14,7 +14,12 @@ export class SearchbarComponent implements OnInit {
   }
 
   Search(event) {
-    location.href = "search/"+event.target['value'];
+    // location.href = "search/"+event.target['value'];
+    // this.router.navigateByUrl("search/"+event.target['value']);
+
+    this.router.navigateByUrl('', { skipLocationChange: true }).then(() => {
+    this.router.navigate(["search/"+event.target['value']]);
+}); 
     console.log(event.target['value']);
   }
 
